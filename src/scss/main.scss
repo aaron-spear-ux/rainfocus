@@ -1,0 +1,106 @@
+.main {
+  grid-area: main;
+  padding: 0 48px 24px;
+  border-left: 1px solid var(--border-color);
+  background: var(--bg-main);
+  position: relative;
+  z-index: 100;
+  .main__heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+    .main__heading-icon {
+      width: 35px;
+      height: 35px;
+      background: url(/img/person-portal.svg) no-repeat center;
+    }
+    h3 {
+      padding-left: 16px;
+    }
+  }
+  .main__steps {
+    .main__step {
+      margin-bottom: 24px;
+    }
+    .main__steps-label {
+      color: var(--primary);
+      margin-bottom: 8px;
+      span {
+        font-weight: 600;
+      }
+    }
+    .main__steps-tile-title,
+    .main__steps-card-title {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .main__steps-tile {
+      padding: 24px 34px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: var(--primary);
+      font-size: 12px;
+    }
+    .main__steps-base {
+      .main__steps-tile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-gap: 32px;
+        .main__steps-card {
+          color: var(--primary);
+          font-size: 12px;
+        }
+      }
+    }
+    .main__steps-build,
+    .main__steps-design {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
+      grid-auto-rows: 122px;
+      grid-gap: 24px;
+      .main__steps-tile {
+        padding: 24px 68px 24px 34px;
+        .main__steps-tile-title {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        .main__steps-tile-icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+          background: url(/img/icon-logic-arrow.svg) no-repeat center;
+        }
+        &.main__steps-tile-add {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 24px 34px;
+          cursor: pointer;
+          .main__steps-tile-center {
+            .main__steps-tile-icon {
+              display: block;
+              margin: 0 auto 4px;
+              background: url(/img/icon-add-circle-outline.svg) no-repeat center;
+            }
+          }
+        }
+        &.hidden {
+          visibility: hidden;
+        }
+      }
+    }
+    .main__steps-design {
+      .main__steps-tile {
+        .main__steps-tile-icon {
+          background: url(/img/icon-computer.svg) no-repeat center;
+        }
+      }
+    }
+  }
+}

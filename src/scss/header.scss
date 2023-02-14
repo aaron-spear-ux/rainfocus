@@ -1,0 +1,44 @@
+.header {
+  grid-area: header;
+  padding: 40px 48px;
+  border-left: 1px solid var(--border-color);
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  color: var(--text-header);
+  .header__event {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 46px;
+    .header__event-logo {
+      width: 89px;
+      height: 89px;
+      background: url(/img/summit-logo.svg) no-repeat center;
+    }
+    .header__event-info {
+      padding-left: 16px;
+      h1 {
+        margin: 8px 0 16px;
+      }
+      span {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .header__btn-edit {
+      position: absolute;
+      right: 48px;
+      top: 40px;
+    }
+  }
+  .header__instructions {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
