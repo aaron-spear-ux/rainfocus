@@ -1,7 +1,7 @@
 const Card = (props) => {
   return (
-    <div className="main__steps-card">
-      <span className="main__steps-card-title">{props.title}</span>
+    <div className="card">
+      <span className="tile__title">{props.title}</span>
       {props.description}
     </div>
   );

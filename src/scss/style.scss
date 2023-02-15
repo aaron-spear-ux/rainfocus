@@ -1,4 +1,5 @@
 @import "./variables";
 @import "./mixins";
 @include reset; //imported from "_mixins.scss"
-@import "global.scss", "header.scss", "main.scss", "nav.scss", "queries.scss";
+@import "global.scss", "header.scss", "main.scss", "nav.scss", "queries.scss",
+  "tile.scss";

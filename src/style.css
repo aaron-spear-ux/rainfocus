@@ -161,77 +161,6 @@ button:hover {
 .main .main__steps .main__steps-label span {
   font-weight: 600;
 }
-.main .main__steps .main__steps-tile-title,
-.main .main__steps .main__steps-card-title {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-.main .main__steps .main__steps-tile {
-  padding: 24px 34px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: var(--primary);
-  font-size: 12px;
-}
-.main .main__steps .main__steps-base .main__steps-tile {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-gap: 32px;
-}
-.main .main__steps .main__steps-base .main__steps-tile .main__steps-card {
-  color: var(--primary);
-  font-size: 12px;
-}
-.main .main__steps .main__steps-build,
-.main .main__steps .main__steps-design {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
-  grid-auto-rows: 122px;
-  grid-gap: 24px;
-}
-.main .main__steps .main__steps-build .main__steps-tile-add .main__steps-tile,
-.main .main__steps .main__steps-design .main__steps-tile-add .main__steps-tile {
-  display: block;
-  text-align: center;
-  padding: 24px 34px;
-  min-height: 122px;
-  cursor: pointer;
-}
-.main .main__steps .main__steps-build .main__steps-tile-add .main__steps-tile .main__steps-tile-title,
-.main .main__steps .main__steps-design .main__steps-tile-add .main__steps-tile .main__steps-tile-title {
-  display: block;
-  margin-top: 12px;
-}
-.main .main__steps .main__steps-build .main__steps-tile-add .main__steps-tile .main__steps-tile-title .main__steps-tile-icon,
-.main .main__steps .main__steps-design .main__steps-tile-add .main__steps-tile .main__steps-tile-title .main__steps-tile-icon {
-  display: block;
-  margin: 0 auto 4px;
-}
-.main .main__steps .main__steps-build .main__steps-tile,
-.main .main__steps .main__steps-design .main__steps-tile {
-  padding: 24px 68px 24px 34px;
-}
-.main .main__steps .main__steps-build .main__steps-tile .main__steps-tile-title,
-.main .main__steps .main__steps-design .main__steps-tile .main__steps-tile-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.main .main__steps .main__steps-build .main__steps-tile .main__steps-tile-icon,
-.main .main__steps .main__steps-design .main__steps-tile .main__steps-tile-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
-.main .main__steps .main__steps-build .main__steps-tile.hidden,
-.main .main__steps .main__steps-design .main__steps-tile.hidden {
-  visibility: hidden;
-}
-.main .main__steps .main__steps-design .main__steps-tile .main__steps-tile-icon {
-  background: url(/img/icon-computer.svg) no-repeat center;
-}
 
 .side-nav {
   grid-area: sidenav;
@@ -490,7 +419,69 @@ button:hover {
   .main .main__steps .main__steps-design {
     grid-auto-rows: 152px;
   }
-  .main .main__steps .main__steps-tile {
+  .main .main__steps .tile {
     padding: 24px;
   }
+}
+.tile__title {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tile {
+  padding: 24px 34px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.main__steps-base .tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 32px;
+}
+.main__steps-base .tile .main__steps-card {
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
+  grid-auto-rows: 122px;
+  grid-gap: 24px;
+}
+.tiles .tile {
+  padding: 24px 68px 24px 34px;
+}
+.tiles .tile .tile__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tiles .tile .tile__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.tiles .tile.hidden {
+  visibility: hidden;
+}
+.tiles .tile__add .tile {
+  display: block;
+  text-align: center;
+  padding: 24px 34px;
+  min-height: 122px;
+  cursor: pointer;
+}
+.tiles .tile__add .tile .tile__title {
+  display: block;
+  margin-top: 12px;
+}
+.tiles .tile__add .tile .tile__title .tile__icon {
+  display: block;
+  margin: 0 auto 4px;
 }
