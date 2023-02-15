@@ -1,5 +1,10 @@
 import Card from "./components/Card";
 import Tile from "./components/Tile";
+import imgLogic from "./img/icon-logic-arrow.svg";
+import imgCircle from "./img/icon-add-circle-outline.svg";
+import imgComputer from "./img/icon-computer.svg";
+
+("./img/icon-computer.svg");
 
 const Main = () => {
   return (
@@ -37,25 +42,22 @@ const Main = () => {
           </div>
           <div className="tiles">
             <Tile
-              icon="./img/icon-logic-arrow.svg"
+              icon={imgLogic}
               title="Attendee Registration"
               description="Start by creating a general registration workflow."
             />
             <Tile
-              icon="./img/icon-logic-arrow.svg"
+              icon={imgLogic}
               title="Attendee Registration"
               description="Start by creating a general registration workflow."
             />
             <Tile
-              icon="./img/icon-logic-arrow.svg"
+              icon={imgLogic}
               title="Attendee Registration"
               description="Start by creating a general registration workflow."
             />
             <div className="tile__add">
-              <Tile
-                icon="./img/icon-add-circle-outline.svg"
-                description="Add Registration Workflow"
-              />
+              <Tile icon={imgCircle} description="Add Registration Workflow" />
             </div>
           </div>
         </div>
@@ -65,7 +67,7 @@ const Main = () => {
           </div>
           <div className="tiles">
             <Tile
-              icon="./img/icon-computer.svg"
+              icon={imgComputer}
               title="Attendee Portal"
               description="Manage the portal that attendees will see after they’ve registered
               for your event."
