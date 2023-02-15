@@ -1,3 +1,6 @@
+import Card from "./components/Card";
+import Tile from "./components/Tile";
+
 const Main = () => {
   return (
     <main className="main">
@@ -11,20 +14,20 @@ const Main = () => {
             <span>Step 1:</span> Base settings.
           </div>
           <div className="main__steps-tile">
-            <div className="main__steps-card">
-              <span className="main__steps-card-title">General</span>
-              Define Attendee types & attributes.
-            </div>
-            <div className="main__steps-card">
-              <span className="main__steps-card-title">Title</span>
-              Description that explains the value goes here. Description that
-              explains the value goes here.
-            </div>
-            <div className="main__steps-card">
-              <span className="main__steps-card-title">Title</span>
-              Description that explains the value goes here. Description that
-              explains the value goes here.
-            </div>
+            <Card
+              title="General"
+              description="Define Attendee types & attributes."
+            />
+            <Card
+              title="Title"
+              description="Description that explains the value goes here. Description that
+              explains the value goes here."
+            />
+            <Card
+              title="Title"
+              description="Description that explains the value goes here. Description that
+              explains the value goes here."
+            />
             <div className="main__steps-card hidden"></div>
           </div>
         </div>
@@ -33,32 +36,26 @@ const Main = () => {
             <span>Step 2:</span> Build registration workflows.
           </div>
           <div className="main__steps-build">
-            <div className="main__steps-tile">
-              <span className="main__steps-tile-title">
-                <span className="main__steps-tile-icon"></span>
-                Attendee Registration
-              </span>
-              Start by creating a general registration workflow.
-            </div>
-            <div className="main__steps-tile">
-              <span className="main__steps-tile-title">
-                <span className="main__steps-tile-icon"></span>
-                Attendee Registration
-              </span>
-              Start by creating a general registration workflow.
-            </div>
-            <div className="main__steps-tile">
-              <span className="main__steps-tile-title">
-                <span className="main__steps-tile-icon"></span>
-                Attendee Registration
-              </span>
-              Start by creating a general registration workflow.
-            </div>
-            <div className="main__steps-tile main__steps-tile-add">
-              <div className="main__steps-tile-center">
-                <span className="main__steps-tile-icon"></span>
-                Add Registration Workflow
-              </div>
+            <Tile
+              icon="./img/icon-logic-arrow.svg"
+              title="Attendee Registration"
+              description="Start by creating a general registration workflow."
+            />
+            <Tile
+              icon="./img/icon-logic-arrow.svg"
+              title="Attendee Registration"
+              description="Start by creating a general registration workflow."
+            />
+            <Tile
+              icon="./img/icon-logic-arrow.svg"
+              title="Attendee Registration"
+              description="Start by creating a general registration workflow."
+            />
+            <div className="main__steps-tile-add">
+              <Tile
+                icon="./img/icon-add-circle-outline.svg"
+                description="Add Registration Workflow"
+              />
             </div>
           </div>
         </div>
@@ -67,14 +64,12 @@ const Main = () => {
             <span>Step 3:</span> Design post-registration experiences.
           </div>
           <div className="main__steps-design">
-            <div className="main__steps-tile">
-              <span className="main__steps-tile-title">
-                <span className="main__steps-tile-icon"></span>
-                Attendee Portal
-              </span>
-              Manage the portal that attendees will see after they’ve registered
-              for your event.
-            </div>
+            <Tile
+              icon="./img/icon-computer.svg"
+              title="Attendee Portal"
+              description="Manage the portal that attendees will see after they’ve registered
+              for your event."
+            />
             <div className="main__steps-tile hidden"></div>
             <div className="main__steps-tile hidden"></div>
             <div className="main__steps-tile hidden"></div>

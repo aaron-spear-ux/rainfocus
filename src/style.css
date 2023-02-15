@@ -191,6 +191,24 @@ button:hover {
   grid-auto-rows: 122px;
   grid-gap: 24px;
 }
+.main .main__steps .main__steps-build .main__steps-tile-add .main__steps-tile,
+.main .main__steps .main__steps-design .main__steps-tile-add .main__steps-tile {
+  display: block;
+  text-align: center;
+  padding: 24px 34px;
+  min-height: 122px;
+  cursor: pointer;
+}
+.main .main__steps .main__steps-build .main__steps-tile-add .main__steps-tile .main__steps-tile-title,
+.main .main__steps .main__steps-design .main__steps-tile-add .main__steps-tile .main__steps-tile-title {
+  display: block;
+  margin-top: 12px;
+}
+.main .main__steps .main__steps-build .main__steps-tile-add .main__steps-tile .main__steps-tile-title .main__steps-tile-icon,
+.main .main__steps .main__steps-design .main__steps-tile-add .main__steps-tile .main__steps-tile-title .main__steps-tile-icon {
+  display: block;
+  margin: 0 auto 4px;
+}
 .main .main__steps .main__steps-build .main__steps-tile,
 .main .main__steps .main__steps-design .main__steps-tile {
   padding: 24px 68px 24px 34px;
@@ -206,21 +224,6 @@ button:hover {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background: url(/img/icon-logic-arrow.svg) no-repeat center;
-}
-.main .main__steps .main__steps-build .main__steps-tile.main__steps-tile-add,
-.main .main__steps .main__steps-design .main__steps-tile.main__steps-tile-add {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px 34px;
-  cursor: pointer;
-}
-.main .main__steps .main__steps-build .main__steps-tile.main__steps-tile-add .main__steps-tile-center .main__steps-tile-icon,
-.main .main__steps .main__steps-design .main__steps-tile.main__steps-tile-add .main__steps-tile-center .main__steps-tile-icon {
-  display: block;
-  margin: 0 auto 4px;
-  background: url(/img/icon-add-circle-outline.svg) no-repeat center;
 }
 .main .main__steps .main__steps-build .main__steps-tile.hidden,
 .main .main__steps .main__steps-design .main__steps-tile.hidden {
