@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
-import Nav from "./Nav";
-import Header from "./Header";
-import Main from "./Main";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 const App = () => {
   return (

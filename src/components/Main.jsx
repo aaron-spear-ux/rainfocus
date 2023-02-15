@@ -1,8 +1,8 @@
-import Card from "./components/Card";
-import Tile from "./components/Tile";
-import imgLogic from "./img/icon-logic-arrow.svg";
-import imgCircle from "./img/icon-add-circle-outline.svg";
-import imgComputer from "./img/icon-computer.svg";
+import Card from "./Card";
+import Tile from "./Tile";
+import imgLogic from "../img/icon-logic-arrow.svg";
+import imgCircle from "../img/icon-add-circle-outline.svg";
+import imgComputer from "../img/icon-computer.svg";
 
 ("./img/icon-computer.svg");
 
