@@ -422,6 +422,16 @@ select {
     padding: 24px;
   }
 }
+@media only screen and (max-width: 380px) {
+  .header,
+  main {
+    width: 95vw;
+  }
+  .main .main__steps .tile {
+    padding: 24px 12px;
+    width: 86vw;
+  }
+}
 .tile__title {
   display: block;
   font-size: 13px;
