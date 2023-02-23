@@ -1,0 +1,7 @@
+$font-stack: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+  margin: 0;
+  font: 14px/18px $font-stack;
+  color: var(--primary);
+}

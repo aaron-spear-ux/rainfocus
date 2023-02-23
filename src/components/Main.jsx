@@ -4,8 +4,6 @@ import imgLogic from "../img/icon-logic-arrow.svg";
 import imgCircle from "../img/icon-add-circle-outline.svg";
 import imgComputer from "../img/icon-computer.svg";
 
-("./img/icon-computer.svg");
-
 const Main = () => {
   return (
     <main className="main">
@@ -26,12 +24,12 @@ const Main = () => {
             <Card
               title="Title"
               description="Description that explains the value goes here. Description that
-              explains the value goes here."
+      explains the value goes here."
             />
             <Card
               title="Title"
               description="Description that explains the value goes here. Description that
-              explains the value goes here."
+      explains the value goes here."
             />
             <div className="card hidden"></div>
           </div>
@@ -70,7 +68,7 @@ const Main = () => {
               icon={imgComputer}
               title="Attendee Portal"
               description="Manage the portal that attendees will see after they’ve registered
-              for your event."
+      for your event."
             />
             <div className="tile hidden"></div>
             <div className="tile hidden"></div>

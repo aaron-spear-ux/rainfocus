@@ -176,13 +176,13 @@
   .header__btn-nav {
     .header__btn-nav-lines .line {
       &.line-top {
-        transform: rotate(45deg);
+        @include transform(rotate(45deg));
       }
       &.line-middle {
         opacity: 0;
       }
       &.line-bottom {
-        transform: rotate(-45deg);
+        @include transform(rotate(-45deg));
       }
     }
   }

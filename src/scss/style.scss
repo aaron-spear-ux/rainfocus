@@ -1,3 +1,4 @@
+@use "base";
 @import "./variables";
 @import "./mixins";
 @include reset; //imported from "_mixins.scss"
